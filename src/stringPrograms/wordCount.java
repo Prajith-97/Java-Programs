@@ -10,7 +10,7 @@ public class wordCount {
         HashMap<String, Integer> map = new HashMap<String, Integer>();
         for (String s : split) {
             if (map.containsKey(s)) {
-                map.put(s, count + 1);
+                map.put(s, map.get(s) + 1);
             } else {
                 map.put(s, count);
             }
